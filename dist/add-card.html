@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Новая карта</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<header class="header">
+  <div class="container">
+    <div class="headerW">
+      <a href="#" class="headerReturn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#return"></use>
+        </svg>
+        <span>Back</span>
+      </a>
+      <div class="headerCenter">
+        <a href="#" class="logo">Friendly Pay</a>
+        <div class="bot">bot</div>
+      </div>
+      <div class="headerRight">
+        <button class="headerMoreBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#header-more-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+		<main class="main">		
+			<div class="account-info">
+  <div class="container">
+    <div class="account-info-wrapper">
+      <a href="#" class="account-info-logo">
+        <img src="img/admin/account/ac-logo.png" alt="logo">
+      </a>
+      <a href="#" class="account-info-message">
+        <img src="img/icons/ac-mes.svg" alt="icon">
+      </a>
+    </div>
+ 
+  </div>
+
+</div>
+			<section class="cards">
+  <div class="container">
+
+    <h2 class="h2 new-card-title">
+      Новая карта
+    </h2>
+    <div class="swiper cardsSlider cardsSlider--stars-bg">
+      <!-- <img src="img/icons/stars-new.svg" alt="stars" class="cardsStars"> -->
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide cardsSlide cardsSlide--blue">
+          <div class="cardsSlideTop">
+            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
+            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
+          </div>
+          <div class="cardsSlideBottom">
+            <div class="cardsSlideBottomLeft">
+              <div class="cardsSlideNumber">
+                <div class="cardsSlideNumberMore">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="cardsSlideNumberMore">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+       
+              </div>
+            </div>
+            <div class="cardsSlideBottomRight">
+              <div class="cardsSlideBrand">
+                <img src="img/admin/cards/visa.svg" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide cardsSlide cardsSlide--blue">
+          <div class="cardsSlideTop">
+            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
+            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
+          </div>
+          <div class="cardsSlideBottom">
+            <div class="cardsSlideBottomLeft">
+              <div class="cardsSlideNumber">
+                <div class="cardsSlideNumberMore">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="cardsSlideNumberTextLast">
+                  4556
+                </div>
+       
+              </div>
+            </div>
+            <div class="cardsSlideBottomRight">
+              <div class="cardsSlideBrand">
+                <img src="img/admin/cards/maestro.svg" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+     
+    </div>
+  </div>
+</section>
+			<section class="advs">
+  <div class="container">
+    <h2 class="h2 advsTitle">
+      Преимущества
+    </h2>
+    <div class="advsList">
+
+      <div class="advsItem">
+        <div class="advsItemIcon">
+          <img src="img/icons/advs-icon-1.svg" alt="icon" class="advsItemIcon">
+        </div>
+        <div class="advsItemContent">
+          <div class="advsItemName">Бесплатное обслуживание</div>
+          <div class="advsItemText">
+            Для всех карт
+          </div>
+        </div>
+      </div>
+
+      <div class="advsItem">
+        <div class="advsItemIcon">
+          <img src="img/icons/advs-icon-2.svg" alt="icon" class="advsItemIcon">
+        </div>
+        <div class="advsItemContent">
+          <div class="advsItemName">Снятие в банкоматах</div>
+          <div class="advsItemText">
+            Для физических карт
+          </div>
+        </div>
+      </div>
+      <div class="advsItem">
+        <div class="advsItemIcon">
+          <img src="img/icons/advs-icon-3.svg" alt="icon" class="advsItemIcon">
+        </div>
+        <div class="advsItemContent">
+          <div class="advsItemName">Пополнение криптой</div>
+          <div class="advsItemText">
+            USDT TRC20
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="button button--blue fw-semibold w-100 advsBtn">
+      Оформить новую карту
+    </button>
+
+  </div>
+</section>
+		
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+
+</footer>
+
+
+<!-- modal -->
+<!-- history-detail -->
+<div class="modal modalHistoryDetail active" id="historyDetail">
+
+  <div class="modalContent">
+    <div class="sectHead">
+      <div class="modalHistoryIcon">
+        <img src="img/icons/arrow-down.svg" alt="arrow">
+        <div class="process">
+          <img src="img/icons/process.svg" alt="process">
+        </div>
+      </div>
+      <div class="modalHistoryPrice">
+        +500 $
+      </div>
+      <div class="modalHistoryDate">
+        12 октября, 12:32
+      </div>
+
+    </div>
+    <div class="modalBody">
+      <h2 class="h2">
+        Детали
+      </h2>
+      <div class="modalHistoryCard">
+        <div class="modalHistoryCardLeft">
+          <div class="modalHistoryCardName">Карта</div>
+          <div class="modalHistoryCardText">
+            <strong>Visa Virtual</strong> •• 3888
+          </div>
+        </div>
+        <img src="img/admin/modal-history/card.svg" alt="image" class="modalHistoryCardImg">
+      </div>
+      <div class="modalHistoryStatus">
+        <div class="modalHistoryStatusName">
+          Статус
+        </div>
+        <div class="modalHistoryStatusText">
+          В обработке
+        </div>
+      </div>
+
+      <button class="button w-100 button--gray fw-semibold modalHistoryDetailBtn">
+        Закрыть
+      </button>
+    </div>
+
+
+  </div>
+</div>
+		<!-- modal -->
+<!-- order -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
+        <img src="img/icons/close-white.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+

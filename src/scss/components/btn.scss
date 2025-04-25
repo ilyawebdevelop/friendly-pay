@@ -1,0 +1,70 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 20px;
+  height: 55px;
+  border-radius: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+
+  &--lg {
+    height: 65px;
+
+    @media(max-width: 991px) {
+      height: 50px;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--blue {
+    background-color: #175AEA;
+    color: #fff;
+  }
+
+  &--gray {
+    background: rgba(32, 32, 34, 0.05);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+  }
+
+  &.w-100 {
+    width: 100%;
+  }
+
+  &.fw-700 {
+    font-weight: 700;
+  }
+}
+
+.headerMoreBtn {
+
+  svg {
+    width: 28px;
+    height: 23px;
+    fill: #000;
+  }
+}
+
+.card-history-more {
+  background: rgba(32, 32, 34, 0.05);
+  margin-top: 25px;
+}
+
+.advsBtn {
+  margin-top: 45px;
+}
+.modalHistoryDetailBtn {
+  margin-top: 38px;
+}

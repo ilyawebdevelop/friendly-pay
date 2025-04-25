@@ -1,0 +1,31 @@
+.history {
+  padding-top: 80px;
+  &Title {
+    font-size: 38px;
+    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+}
+.historyTabsNav {
+  display: flex;
+  column-gap: 9px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.historyTabsBtn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #F4F4F4;
+  font-size: 15px;
+  font-weight: 600;
+}
+.historyTabsBody {
+  .h2 {
+    margin-bottom: 26px;
+  }
+}
+.historyDay:not(:last-child){
+  margin-bottom: 40px;
+}
