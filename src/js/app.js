@@ -29,12 +29,25 @@ var mySwiperCards = new Swiper(cardsSlider, {
     type: 'bullets',
   },
   breakpoints: {
-    0: {     
+    0: {
       spaceBetween: 6,
     },
-    376: { 
+    376: {
       spaceBetween: 20,
     },
   },
 });
 
+/* Scroll UP */
+$(window).on('scroll', function () {
+  var scroll = $(window).scrollTop();
+  if (scroll < 300) {
+    $('.header--sum .headerSum').hide();
+    $('.header--sum').removeClass('active');
+   
+    
+  } else {
+    $('.header--sum .headerSum').show();
+    $('.header--sum').addClass('active');
+  }
+});
