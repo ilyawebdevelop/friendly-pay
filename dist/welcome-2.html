@@ -120,17 +120,63 @@
 
   </div>
 </div>
+
+<script src="js/clipboard.min.js"></script>
 		<!-- modal -->
 <!-- order -->
-<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
-        <img src="img/icons/close-white.svg" alt="icon">
-      </button>
+<div class="modal" id="modalReq">
+
+  <div class="modalContent">
+    <div class="sectHead">
+      <div class="h2 text--white">Реквизиты</div>
     </div>
+
+
+    <div class="modalBody">
+      <div class="inputGrid">
+        <div class="inputRow">
+          <div class="inputW">
+            <input id="req_1" class="formInput" type="text" value="1234 5678 9012 3456">
+            <!-- Trigger -->
+            <button class="copyBtn" aria-label="asdasd" data-clipboard-target="#req_1">
+              <img src="img/icons/copy.svg" alt="Copy to clipboard">
+            </button>
+            <div class="copyText">
+              Скопировано
+            </div>
+          </div>
+        </div>
+
+        <div class="inputRow inputRow--50">
+          <div class="inputW">
+            <input id="req_2" class="formInput" type="text" value="12 / 34" readonly>
+            <button class="copyBtn" type="button" data-clipboard-target="#req_2">
+              <img src="img/icons/copy.svg" alt="Copy to clipboard">
+            </button>
+            <div class="copyText">
+              Скопировано
+            </div>
+          </div>
+        </div>
+        <div class="inputRow inputRow--50">
+          <div class="inputW">
+            <input id="req_3" class="formInput" type="text" value="123" readonly>
+            <button class="copyBtn" type="button" data-clipboard-target="#req_3">
+              <img src="img/icons/copy.svg" alt="copy">
+            </button>
+            <div class="copyText">
+              Скопировано
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button type="button" class="button button--gray w-100 fw-semibold" title="Close" data-fancybox-close readonly>
+        Закрыть
+      </button>
+
+    </div>
+
   </div>
 </div>
 	</div>

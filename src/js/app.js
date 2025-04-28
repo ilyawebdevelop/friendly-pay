@@ -3,10 +3,34 @@ import "./modules/jquery-3.7.1.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import './components.js';
 
+
 flsFunctions.isWebp();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,
+});
+
+var clipboard = new ClipboardJS('.copyBtn', {
+
+});
+
+clipboard.on('success', function (e) {
+  console.info('Action:', e.action);
+  console.info('Text:', e.text);
+  console.info('Trigger:', e.trigger);
+  let parent = e.trigger.closest('.inputW');
+  let copyText = parent.querySelector('.copyText');
+  console.log(copyText);
+  copyText.classList.add('active');
+  setTimeout(function () {
+    copyText.classList.remove('active');
+  }, 2000);
+  e.clearSelection();
+});
+
+clipboard.on('error', function (e) {
+  console.error('Action:', e.action);
+  console.error('Trigger:', e.trigger);
 });
 
 // Import swiper
@@ -44,10 +68,24 @@ $(window).on('scroll', function () {
   if (scroll < 300) {
     $('.header--sum .headerSum').hide();
     $('.header--sum').removeClass('active');
-   
-    
+
+
   } else {
     $('.header--sum .headerSum').show();
     $('.header--sum').addClass('active');
   }
 });
+
+
+// let copyElEach = document.querySelectorAll('.copyBtn');
+// copyElEach?.forEach(el => {
+//   el.addEventListener('click', () => {
+//     let input = el.closest('.inputW').querySelector('input');
+//     let textForShow = el.closest('.inputW').querySelector('.textForShow');
+//     textForShow.classList.add('active');
+//     setTimeout(function () {
+// 			$(popup).addClass('_show');
+// 		}, 5);
+//     console.log(input);
+//   });
+// });

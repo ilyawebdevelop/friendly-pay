@@ -2253,12 +2253,15 @@ section {
 
 .formInput {
   height: 50px;
-  border-radius: 5px;
-  border: 1px solid #838383;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   width: 100%;
-  padding-left: 25px;
+  padding-left: 18px;
   font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  padding-right: 45px;
 }
 @media (max-width: 1199px) {
   .formInput {
@@ -2355,40 +2358,52 @@ section {
   max-width: 100%;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: var(--font-family);
   color: #000;
   font-weight: 600;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 36px;
 }
 @media (max-width: 991px) {
-  h1, .h1 {
+  h1,
+.h1 {
     font-size: 24px;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 32px;
 }
 @media (max-width: 991px) {
-  h2, .h2 {
+  h2,
+.h2 {
     font-size: 20px;
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 24px;
 }
 @media (max-width: 991px) {
-  h3, .h3 {
+  h3,
+.h3 {
     font-size: 16px;
   }
 }
@@ -2437,6 +2452,45 @@ h3, .h3 {
 .content > a {
   display: inline;
   border-bottom: 1px solid #000;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 12px;
+  margin-bottom: 20px;
+}
+.inputGrid .inputRow {
+  grid-column: 12 span;
+  margin-bottom: 12px;
+}
+.inputGrid .inputRow--50 {
+  grid-column: 6 span;
+}
+
+.inputW {
+  position: relative;
+}
+.inputW .copyBtn {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copyText {
+  display: none;
+}
+
+.copyText.active {
+  display: block;
+}
+
+.copyText {
+  font-size: 10px;
+  line-height: normal;
+  position: absolute;
+  right: 0;
 }
 
 .button {
@@ -2499,6 +2553,10 @@ h3, .h3 {
 
 .modalHistoryDetailBtn {
   margin-top: 38px;
+}
+
+.ac-stop-btn {
+  flex-shrink: 0;
 }
 
 /* Hamburger Menu */
@@ -2671,6 +2729,19 @@ h3, .h3 {
 
 .modalHistoryStatusName {
   color: rgba(0, 0, 0, 0.5);
+}
+
+#modalReq {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  bottom: 0;
+  position: absolute;
+  max-height: 100%;
+  padding-top: 20px;
+}
+#modalReq .h2 {
+  font-size: 28px;
+  line-height: 34px;
 }
 
 .tabs__nav {
@@ -3259,6 +3330,44 @@ h3, .h3 {
   background: #EDEDED;
   border-radius: 50%;
   padding: 6px;
+}
+
+.ac-stop {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.ac-stop-wrapper {
+  height: calc(100vh - 92px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.ac-stop-title {
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.ac-stop-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ac-stop-descr {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  max-width: 235px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .advsTitle {

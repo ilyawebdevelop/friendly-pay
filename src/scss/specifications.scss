@@ -60,10 +60,12 @@ section {
     padding-top: 35px;
   }
 }
+
 .sect {
   &.pb-0 {
     padding-bottom: 0;
   }
+
   &.pt-0 {
     padding-top: 0;
   }
@@ -71,12 +73,15 @@ section {
 
 .formInput {
   height: 50px;
-  border-radius: 5px;
-  border: 1px solid #838383;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
   background-color: #ffffff;
   width: 100%;
-  padding-left: 25px;
+  padding-left: 18px;
   font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.60);
+  padding-right: 45px;
 
   @media(max-width: 1199px) {
     padding-left: 20px;
@@ -91,6 +96,7 @@ section {
 .fw-medium {
   font-weight: 500;
 }
+
 .fw-semibold {
   font-weight: 600;
 }
@@ -100,7 +106,7 @@ section {
 }
 
 .sectHead {
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 
   @media (max-width: 991px) {
     margin-bottom: 24px;
@@ -141,6 +147,7 @@ section {
     margin: auto;
     padding: 0;
   }
+
   .header {
     .container {
       max-width: 570px;
@@ -152,6 +159,7 @@ section {
   .container {
     max-width: 720px;
   }
+
   .header {
     .container {
       max-width: 750px;
@@ -163,6 +171,7 @@ section {
   .container {
     max-width: 960px;
   }
+
   .header {
     .container {
       max-width: 980px;
@@ -175,6 +184,7 @@ section {
     max-width: 980px;
   }
 }
+
 @media (min-width: 1400px) {
   .container {
     max-width: 980px;
@@ -186,31 +196,43 @@ section {
   max-width: 100%;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: var(--font-family);
   color: #000;
   font-weight: 600;
 }
 
-h1, .h1 {
-  font-size: 36px; 
-  @media(max-width: 991px){
+h1,
+.h1 {
+  font-size: 36px;
+
+  @media(max-width: 991px) {
     font-size: 24px;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 32px;
+
   @media(max-width: 991px) {
-    font-size: 20px;  
+    font-size: 20px;
   }
 }
-h3, .h3 {
+
+h3,
+.h3 {
   font-size: 24px;
 
   @media (max-width: 991px) {
@@ -253,19 +275,59 @@ h3, .h3 {
 .content {
   &>p {
     margin-bottom: 15px;
+
     a {
       display: inline;
       border-bottom: 1px solid #000;
     }
   }
+
   &>ul {
     margin-top: 15px;
     margin-bottom: 15px;
     list-style-type: disc;
     padding-left: 20px;
   }
+
   &>a {
     display: inline;
     border-bottom: 1px solid #000;
   }
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 12px;
+  margin-bottom: 20px;
+
+  .inputRow {
+    grid-column: 12 span;
+    margin-bottom: 12px;
+
+    &--50 {
+      grid-column: 6 span;
+    }
+  }
+}
+.inputW {
+  position: relative;
+  .copyBtn {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.copyText {
+  display: none;
+}
+.copyText.active {
+  display: block;
+}
+.copyText {
+  font-size: 10px;
+  line-height: normal;
+  position: absolute;
+  right: 0;
 }
