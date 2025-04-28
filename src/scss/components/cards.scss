@@ -49,6 +49,9 @@
       display: flex;
       padding-top: 8px;
       padding-bottom: 8px;
+      &.swiper-pagination-lock {
+        display: none;
+      }
     }
 
     .swiper-pagination-bullet {
@@ -150,8 +153,9 @@
 
     li {
       grid-column: 4 span;
+      position: relative;
 
-      a {
+      a,button {
         padding: 10px 18px;
         border-radius: 18px;
         background: rgba(22, 90, 234, 0.10);
@@ -160,6 +164,7 @@
         align-items: center;
         row-gap: 2px;
         transition: background .2s linear;
+        width: 100%;
 
         &:hover {
           background: rgba(22, 90, 234, 0.20);
@@ -179,11 +184,19 @@
         }
       }
     }
+    &.cardsNavList--active-card {
+      li {
+        grid-column: 12 span;
+      }
+    }
   }
 }
 
 .cards-btn {
   padding-top: 0;
+  &--disabled {
+    opacity: .3;
+  }
 
   &-link {
     padding: 17px 20px 17px 25px;
@@ -229,6 +242,9 @@
 }
 
 .card-history {
+  &--disabled {
+    opacity: .3;
+  }
   &-title {
     margin-bottom: 23px;
   }
@@ -346,6 +362,9 @@
 
 .card-limits {
   padding-top: 15px;
+  &--disabled {
+    opacity: .3;
+  }
 
   .container {
     @media(max-width: 575px) {

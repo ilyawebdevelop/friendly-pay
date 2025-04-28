@@ -76,6 +76,40 @@ $(window).on('scroll', function () {
   }
 });
 
+function overlayActive() {
+  let overlay = document.querySelector('.overlay');
+  overlay.classList.add('active');
+}
+function overlayHide() {
+  let overlay = document.querySelector('.overlay');
+  overlay.classList.remove('active');
+}
+
+let cardsNavMore = document.querySelector('#cardsNavMore');
+let cardIce = document.querySelector('.cardIce');
+let bodyEl = document.querySelector('body');
+cardsNavMore?.addEventListener('click', () => {
+  cardIce.classList.add('active');
+  cardsNavMore.classList.add('active');
+  overlayActive();
+  bodyEl.classList.add('hidden');
+});
+
+document.addEventListener('click', e => {
+  let overlay = document.querySelector('.overlay');
+  let target = e.target;
+  let its_cardsNavMore = target == cardsNavMore || cardsNavMore.contains(target);
+  let its_cardIce = target == cardIce || cardIce.contains(target);
+  let overlay_is_active = overlay.classList.contains('active');
+
+  if (!its_cardsNavMore && !its_cardIce && overlay_is_active) {
+    overlayHide();
+    cardsNavMore.classList.remove('active');
+    cardIce.classList.remove('active');
+    bodyEl.classList.remove('hidden');
+  }
+});
+
 
 // let copyElEach = document.querySelectorAll('.copyBtn');
 // copyElEach?.forEach(el => {
