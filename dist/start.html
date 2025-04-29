@@ -219,67 +219,17 @@
 </footer>
 
 
-<!-- modal -->
-<!-- history-detail -->
-<div class="modal modalHistoryDetail active" id="historyDetail">
 
-  <div class="modalContent">
-    <div class="sectHead">
-      <div class="modalHistoryIcon">
-        <img src="img/icons/arrow-down.svg" alt="arrow">
-        <div class="process">
-          <img src="img/icons/process.svg" alt="process">
-        </div>
-      </div>
-      <div class="modalHistoryPrice">
-        +500 $
-      </div>
-      <div class="modalHistoryDate">
-        12 октября, 12:32
-      </div>
-
-    </div>
-    <div class="modalBody">
-      <h2 class="h2">
-        Детали
-      </h2>
-      <div class="modalHistoryCard">
-        <div class="modalHistoryCardLeft">
-          <div class="modalHistoryCardName">Карта</div>
-          <div class="modalHistoryCardText">
-            <strong>Visa Virtual</strong> •• 3888
-          </div>
-        </div>
-        <img src="img/admin/modal-history/card.svg" alt="image" class="modalHistoryCardImg">
-      </div>
-      <div class="modalHistoryStatus">
-        <div class="modalHistoryStatusName">
-          Статус
-        </div>
-        <div class="modalHistoryStatusText">
-          В обработке
-        </div>
-      </div>
-
-      <button class="button w-100 button--gray fw-semibold modalHistoryDetailBtn">
-        Закрыть
-      </button>
-    </div>
-
-
-  </div>
-</div>
 
 <script src="js/clipboard.min.js"></script>
 		<!-- modal -->
-<!-- order -->
+<!-- modalReq -->
 <div class="modal" id="modalReq">
 
   <div class="modalContent">
     <div class="sectHead">
       <div class="h2 text--white">Реквизиты</div>
     </div>
-
 
     <div class="modalBody">
       <div class="inputGrid">
@@ -323,6 +273,95 @@
       <button type="button" class="button button--gray w-100 fw-semibold" title="Close" data-fancybox-close readonly>
         Закрыть
       </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modal -->
+<!-- history-detail -->
+<div class="modal modalHistoryDetail active" id="historyDetail">
+
+  <div class="modalContent">
+    <div class="sectHead">
+      <div class="modalHistoryIcon">
+        <img src="img/icons/arrow-down.svg" alt="arrow">
+        <div class="process">
+          <img src="img/icons/process.svg" alt="process">
+        </div>
+      </div>
+      <div class="modalHistoryPrice">
+        +500 $
+      </div>
+      <div class="modalHistoryDate">
+        12 октября, 12:32
+      </div>
+
+    </div>
+    <div class="modalBody">
+      <h2 class="h2">
+        Детали
+      </h2>
+      <div class="modalHistoryCard">
+        <div class="modalHistoryCardLeft">
+          <div class="modalHistoryCardName">Карта</div>
+          <div class="modalHistoryCardText">
+            <strong>Visa Virtual</strong> •• 3888
+          </div>
+        </div>
+        <img src="img/admin/modal-history/card.svg" alt="image" class="modalHistoryCardImg">
+      </div>
+      <div class="modalHistoryStatus">
+        <div class="modalHistoryStatusName">
+          Статус
+        </div>
+        <div class="modalHistoryStatusText">
+          В обработке
+        </div>
+      </div>
+
+      <button class="button w-100 button--gray fw-semibold modalHistoryDetailBtn" title="Close" data-fancybox-close>
+        Закрыть
+      </button>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- modalReq -->
+<div class="modal modalMoney" id="modalMoney">
+
+  <div class="modalContent">
+    <div class="sectHead">
+      <div class="h2 text--white">Чем пополнить</div>
+    </div>
+
+    <div class="modalBody">
+
+      <a href="#" class="dropItem popolnDropItem">
+        <div class="popolnDropLeft">
+          <div class="popolnDropImg">
+            <div class="popolnDropMoney">
+              <img src="img/admin/cards/money-t.svg" alt="logo" class="popolnDropMoneyImg">
+
+            </div>
+          </div>
+          <div class="popolnDropContent">
+            <div class="popolnDropText fw-medium color--black">
+              USDT TRC20
+            </div>
+            <div class="popolnDropName color--gray-60">
+              От <span class="fw-semibold">10 $</span>, комиссия <span class="fw-semibold">2%</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="popolnDropArrow justify-center">
+          <img src="img/icons/arrow-right-gray.svg" alt="icon">
+        </div>
+      </a>
 
     </div>
 

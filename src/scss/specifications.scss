@@ -59,8 +59,13 @@ section {
     padding-bottom: 35px;
     padding-top: 35px;
   }
+  &.pt {
+    padding-top: 80px;
+  }
 }
-
+.text-center {
+  text-align: center;
+}
 .sect {
   &.pb-0 {
     padding-bottom: 0;
@@ -70,7 +75,31 @@ section {
     padding-top: 0;
   }
 }
-
+.text--sm {
+  font-size: 13px;
+  line-height: 20px;
+}
+.page-title{
+  margin-bottom: 24px;
+}
+.color--blue {
+  color: #175AEA;
+}
+.color--gray-60 {
+  color: rgba(0, 0, 0, 0.60);
+}
+.color--black {
+  color: #000;
+}
+.mb-6 {
+  margin-bottom: 60px;
+}
+.mt-6 {
+  margin-top: 60px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
 .formInput {
   height: 50px;
   border-radius: 16px;
@@ -225,6 +254,9 @@ h1,
 h2,
 .h2 {
   font-size: 32px;
+  &.fw-medium {
+    font-weight: 500;
+  }
 
   @media(max-width: 991px) {
     font-size: 20px;
@@ -343,4 +375,21 @@ h3,
 }
 .overlay.active {
   display: block;
+}
+@keyframes Orbita2 {
+  from { transform: rotate(180deg) rotate(180deg); }
+  to   { transform: rotate(540deg) rotate(540deg); }
+}
+.spin-img {
+  animation: Orbita2 2s linear infinite;
+}
+.pageW {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 80px);
+  padding-bottom: 40px;
+}
+.pageT {
+  padding-bottom: 50px;
 }

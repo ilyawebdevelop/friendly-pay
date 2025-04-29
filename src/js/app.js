@@ -111,15 +111,3 @@ document.addEventListener('click', e => {
 });
 
 
-// let copyElEach = document.querySelectorAll('.copyBtn');
-// copyElEach?.forEach(el => {
-//   el.addEventListener('click', () => {
-//     let input = el.closest('.inputW').querySelector('input');
-//     let textForShow = el.closest('.inputW').querySelector('.textForShow');
-//     textForShow.classList.add('active');
-//     setTimeout(function () {
-// 			$(popup).addClass('_show');
-// 		}, 5);
-//     console.log(input);
-//   });
-// });

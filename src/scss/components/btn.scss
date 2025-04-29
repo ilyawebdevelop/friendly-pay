@@ -28,6 +28,12 @@
     background-color: #175AEA;
     color: #fff;
   }
+  &--light-blue {
+    background: rgba(23, 90, 234, 0.10);
+    
+
+    
+  }
 
   &--gray {
     background: rgba(32, 32, 34, 0.05);
@@ -45,6 +51,9 @@
 
   &.fw-700 {
     font-weight: 700;
+  }
+  &.justify-start {
+    justify-content: flex-start;
   }
 }
 

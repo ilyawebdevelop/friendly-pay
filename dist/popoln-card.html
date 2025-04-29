@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Новая карта</title>
+	<title>Пополнение карты</title>
 </head>
 
 <body>
@@ -44,141 +44,101 @@
 </header>
 <div class="overlay"></div>
 		<main class="main">		
-			<div class="account-info">
+
+			<section class="popoln sect pt pb-0">
   <div class="container">
-    <div class="account-info-wrapper">
-      <a href="#" class="account-info-logo">
-        <img src="img/admin/account/ac-logo.png" alt="logo">
-      </a>
-      <a href="#" class="account-info-message">
-        <img src="img/icons/ac-mes.svg" alt="icon">
-      </a>
-    </div>
- 
-  </div>
-
-</div>
-			<section class="cards">
-  <div class="container">
-
-    <h2 class="h2 new-card-title">
-      Новая карта
-    </h2>
-    <div class="swiper cardsSlider cardsSlider--stars-bg">
-      <!-- <img src="img/icons/stars-new.svg" alt="stars" class="cardsStars"> -->
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide cardsSlide cardsSlide--blue">
-          <div class="cardsSlideTop">
-            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
-            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
-          </div>
-          <div class="cardsSlideBottom">
-            <div class="cardsSlideBottomLeft">
-              <div class="cardsSlideNumber">
-                <div class="cardsSlideNumberMore">
-                  <span></span>
-                  <span></span>
+    <div class="pageW">
+      <div class="pageT">
+        <h1 class="h1 text-center page-title">
+          Пополнение
+        </h1>
+        <div class="dropdownW popolnDrop">
+          <div class="dropItem popolnDropItem">
+            <div class="popolnDropLeft">
+              <div class="popolnDropImg">
+                <div class="popolnDropCard">
+                  <img src="img/admin/cards/oblako.svg" alt="logo" class="popolnDropLogo">
+                  <span class="popolnDropNumber">
+                    3888
+                  </span>
                 </div>
-                <div class="cardsSlideNumberMore">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              </div>
+              <div class="popolnDropContent">
+                <div class="popolnDropText">
+                  <span class="fw-semibold">300</span>,49 $
                 </div>
-       
+                <div class="popolnDropName">
+                  Счет пополнения
+                </div>
               </div>
             </div>
-            <div class="cardsSlideBottomRight">
-              <div class="cardsSlideBrand">
-                <img src="img/admin/cards/visa.svg" alt="logo">
-              </div>
+            <div class="popolnDropArrow justify-end">
+              <img src="img/icons/arrow-down-gray.svg" alt="icon">
             </div>
           </div>
-        </div>
+          <div class="dropItem popolnDropItem" data-fancybox data-src="#modalMoney">
+            <div class="popolnDropLeft">
+              <div class="popolnDropImg">
+                <div class="popolnDropMoney">
+                  <img src="img/admin/cards/money-t.svg" alt="logo" class="popolnDropMoneyImg">
 
-        <div class="swiper-slide cardsSlide cardsSlide--blue">
-          <div class="cardsSlideTop">
-            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
-            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
-          </div>
-          <div class="cardsSlideBottom">
-            <div class="cardsSlideBottomLeft">
-              <div class="cardsSlideNumber">
-                <div class="cardsSlideNumberMore">
-                  <span></span>
-                  <span></span>
                 </div>
-                <div class="cardsSlideNumberTextLast">
-                  4556
-                </div>
-       
               </div>
+              <div class="popolnDropContent">
+                <div class="popolnDropText">
+                  USDT TRC20
+                </div>
+                <div class="popolnDropName">
+                  Валюта пополнения
+                </div>
+              </div>
+
             </div>
-            <div class="cardsSlideBottomRight">
-              <div class="cardsSlideBrand">
-                <img src="img/admin/cards/maestro.svg" alt="logo">
-              </div>
+            <div class="popolnDropArrow justify-end">
+              <img src="img/icons/arrow-down-gray.svg" alt="icon">
             </div>
           </div>
         </div>
+        <p class="text--sm color--gray-60 mb-6">
+          Комиссия<strong class="fw-medium"> 2%,</strong> зачисление ≈ <strong class="fw-medium">2 минуты</strong>
+        </p>
+        <h2 class="h2 mt-6 mb-2 fw-medium" style="max-width: 235px;">
+          Отправьте USDT TRC20
+          на кошелек:
+        </h2>
 
-      </div>
-      <div class="swiper-pagination"></div>
-     
-    </div>
-  </div>
-</section>
-			<section class="advs">
-  <div class="container">
-    <h2 class="h2 advsTitle">
-      Преимущества
-    </h2>
-    <div class="advsList">
-
-      <div class="advsItem">
-        <div class="advsItemIcon">
-          <img src="img/icons/advs-icon-1.svg" alt="icon" class="advsItemIcon">
-        </div>
-        <div class="advsItemContent">
-          <div class="advsItemName">Бесплатное обслуживание</div>
-          <div class="advsItemText">
-            Для всех карт
+        <div class="sendBtnW">
+          <div class="inputW">
+            <input id="req_1" class="formInput" type="text" value="TDTdCv...aawNuj8" readonly>
+            <button class="copyBtn" type="button" data-clipboard-target="#req_1">
+              <img src="img/icons/copy.svg" alt="Copy to clipboard">
+            </button>
+            <div class="copyText">
+              Скопировано
+            </div>
           </div>
+          <a class="sendQr" href="#">
+            <img src="img/admin/cards/qr.svg" alt="qr">
+          </a>
         </div>
-      </div>
 
-      <div class="advsItem">
-        <div class="advsItemIcon">
-          <img src="img/icons/advs-icon-2.svg" alt="icon" class="advsItemIcon">
-        </div>
-        <div class="advsItemContent">
-          <div class="advsItemName">Снятие в банкоматах</div>
-          <div class="advsItemText">
-            Для физических карт
-          </div>
-        </div>
+        <p class="text--sm fw-medium color--gray-60">
+          Отправляйте только USDT TRC20. Не отправляйте средства повторно на указанный адрес
+        </p>
       </div>
-      <div class="advsItem">
-        <div class="advsItemIcon">
-          <img src="img/icons/advs-icon-3.svg" alt="icon" class="advsItemIcon">
+      <button class="button button--light-blue w-100 fw-semibold color--blue justify-start">
+        <div class="spin-img">
+          <img src="img/icons/round-blue-spin.svg" alt="icon">
         </div>
-        <div class="advsItemContent">
-          <div class="advsItemName">Пополнение криптой</div>
-          <div class="advsItemText">
-            USDT TRC20
-          </div>
-        </div>
-      </div>
-
+        Ожидание пополнения...
+      </button>
     </div>
 
-    <button class="button button--blue fw-semibold w-100 advsBtn">
-      Оформить новую карту
-    </button>
+
 
   </div>
 </section>
+		
 		
 		</main>
 		<!-- Footer -->
