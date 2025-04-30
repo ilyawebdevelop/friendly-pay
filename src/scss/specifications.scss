@@ -88,6 +88,9 @@ section {
 .color--gray-60 {
   color: rgba(0, 0, 0, 0.60);
 }
+.color--blue-60 {
+  color: rgba(23, 90, 234, 0.60);
+}
 .color--black {
   color: #000;
 }
@@ -99,6 +102,12 @@ section {
 }
 .mb-2 {
   margin-bottom: 20px;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
 }
 .formInput {
   height: 50px;
@@ -253,7 +262,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 20px;
   &.fw-medium {
     font-weight: 500;
   }
@@ -392,4 +401,19 @@ h3,
 }
 .pageT {
   padding-bottom: 50px;
+}
+.pe-none {
+  pointer-events: none;
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.gap-2 {
+  gap: 20px;
 }

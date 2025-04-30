@@ -1980,8 +1980,8 @@ html.with-fancybox body.hide-scrollbar {
   --font-family: "SFProDisplay";
   --font-family-second: "Roboto", sans-serif;
   --outline: #e3ebf2;
-  --main-color: #333;
-  --black: #333;
+  --main-color: #000;
+  --black: #000;
   --background: #f3f7fd;
   --success: #27c340;
   --error: #e02828;
@@ -2275,6 +2275,10 @@ section.pt {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.color--blue-60 {
+  color: rgba(23, 90, 234, 0.6);
+}
+
 .color--black {
   color: #000;
 }
@@ -2289,6 +2293,14 @@ section.pt {
 
 .mb-2 {
   margin-bottom: 20px;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
 }
 
 .formInput {
@@ -2428,7 +2440,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 20px;
 }
 h2.fw-medium,
 .h2.fw-medium {
@@ -2574,6 +2586,26 @@ h3,
 
 .pageT {
   padding-bottom: 50px;
+}
+
+.pe-none {
+  pointer-events: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 20px;
 }
 
 .button {
@@ -3200,10 +3232,31 @@ h3,
 .cardsSlide--blue {
   background-color: #175AEA;
 }
+.cardsSlide--opacity {
+  overflow: hidden;
+  box-shadow: none;
+}
+.cardsSlide--opacity::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+  background-color: #000;
+}
+.cardsSlide--shadow-none {
+  box-shadow: none;
+}
 
 .cardsNavSect {
   padding-top: 10px;
   padding-bottom: 28px;
+}
+.cardsNavSect--disabled {
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 .cardsNav ul {
@@ -3239,11 +3292,28 @@ h3,
   margin-left: auto;
   margin-right: auto;
 }
+.cardsNav ul li a .spin-img img,
+.cardsNav ul li button .spin-img img {
+  width: 20px;
+  height: auto;
+}
 .cardsNav ul li a span,
 .cardsNav ul li button span {
   font-weight: 600;
   color: #165AEA;
   font-size: 14px;
+}
+.cardsNav ul li a.flex-row,
+.cardsNav ul li button.flex-row {
+  flex-direction: row;
+}
+.cardsNav ul li a.activationItem,
+.cardsNav ul li button.activationItem {
+  padding-bottom: 50px;
+}
+.cardsNav ul li a.activationItem span,
+.cardsNav ul li button.activationItem span {
+  font-size: 16px;
 }
 .cardsNav ul.cardsNavList--active-card li {
   grid-column: 12 span;
@@ -3254,6 +3324,7 @@ h3,
 }
 .cards-btn--disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 .cards-btn-link {
   padding: 17px 20px 17px 25px;
@@ -3292,6 +3363,7 @@ h3,
 
 .card-history--disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 .card-history-title {
   margin-bottom: 23px;
@@ -3390,6 +3462,7 @@ h3,
 }
 .card-limits--disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 @media (max-width: 575px) {
   .card-limits .container {
@@ -3544,6 +3617,43 @@ h3,
 }
 .popolnDropArrow.justify-center {
   justify-content: center;
+}
+
+.popolnSum {
+  font-size: 28px;
+  line-height: 38px;
+  margin-top: 16px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+.popolnIcon {
+  border-radius: 30px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 86px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+.popolnIcon > img {
+  width: 26px;
+}
+.popolnIcon--blue-light {
+  background-color: rgba(23, 90, 234, 0.1019607843);
+}
+.popolnIcon--success {
+  background-color: var(--success);
+}
+
+.popolnIcon--pend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .account-info {

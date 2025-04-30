@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Карта заморожена</title>
+	<title>Пополнение загрузка</title>
 </head>
 
 <body>
@@ -72,7 +72,7 @@
     <div class="swiper cardsSlider">
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide cardsSlide cardsSlide--blue cardsSlide--shadow-none">
+        <div class="swiper-slide cardsSlide cardsSlide--blue cardsSlide--opacity">
           <div class="cardsSlideTop">
             <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">          
           </div>
@@ -110,8 +110,10 @@
       <ul class="cardsNavList cardsNavList--active-card">
         <li class="cardsNavItem">
           <a href="#">
-            <img src="img/icons/plus-blue.svg" alt="icon" class="cardsNavItemIcon">
-            <span>Активировать карту</span>
+            <div class="spin-img">
+              <img src="img/icons/round-blue-spin.svg" alt="icon">
+            </div>
+            <span>Загрузка...</span>
           </a>
         </li>     
       </ul>
