@@ -520,6 +520,16 @@
     background-color: #175AEA;
     border-radius: 4.425px;
     padding: 6px;
+    min-height: 32px;
+    display: flex;
+    &.justify-end {
+      
+      justify-content: flex-end;
+    }
+    &.flex-column {
+      flex-direction: column;
+    }
+   
 
     span {
       font-size: 9px;
@@ -613,6 +623,9 @@
   &>img {
     width: 26px;
   }
+  &>.w-44 {
+    width: 44px;
+  }
   &--blue-light {
     background-color: #175AEA1A;
   }
@@ -625,4 +638,40 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.zakaz-card-block {
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+  margin-bottom: 46px;
+}
+.zakaz-card-list{
+  display: flex;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 10px;
+  justify-content: center;
+}
+.zakaz-card-item{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  &-name {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: var(--font-family-second);
+    white-space: nowrap;
+  }
+  &-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #666;
+    text-align: center;
+  }
+}
+.zakaz {
+  overflow: hidden;
+}
+.popolnDropCard .popolnLogo img {
+  width: 28px;
+  margin-left: auto;
 }

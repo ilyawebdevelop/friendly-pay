@@ -12,11 +12,11 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Пополнение карты</title>
+	<title>Оплата карты</title>
 </head>
 
 <body>
-	
+
 	<div class="wrapper">
 		<header class="header">
   <div class="container">
@@ -43,67 +43,59 @@
   </div>
 </header>
 <div class="overlay"></div>
-		<main class="main">		
+		<main class="main">
 
 			<section class="popoln sect pt pb-0">
   <div class="container">
     <div class="pageW">
       <div class="pageT">
         <h1 class="h1 text-center page-title">
-          Пополнение
+          Оплата карты
         </h1>
         <div class="dropdownW popolnDrop">
           <div class="dropItem popolnDropItem">
             <div class="popolnDropLeft">
               <div class="popolnDropImg">
-                <div class="popolnDropCard">
-                  <img src="img/admin/cards/oblako.svg" alt="logo" class="popolnDropLogo">
-                  <span class="popolnDropNumber">
-                    3888
+                <div class="popolnDropCard justify-end flex-column">                 
+                  <span class="popolnLogo">
+                    <img src="img/admin/cards/visa.svg" alt="visa">
                   </span>
                 </div>
               </div>
               <div class="popolnDropContent">
                 <div class="popolnDropText">
-                  <span class="fw-semibold">300</span>,49 $
+                  Visa Virtual
                 </div>
                 <div class="popolnDropName">
-                  Счет пополнения
+                  Выбранная карта
                 </div>
               </div>
-            </div>
-            <div class="popolnDropArrow justify-end">
-              <img src="img/icons/arrow-down-gray.svg" alt="icon">
-            </div>
+            </div>         
           </div>
           <div class="dropItem popolnDropItem" data-fancybox data-src="#modalMoney">
             <div class="popolnDropLeft">
               <div class="popolnDropImg">
                 <div class="popolnDropMoney">
-                  <img src="img/admin/cards/money-t.svg" alt="logo" class="popolnDropMoneyImg">
+                  <img src="img/admin/cards/money-dollar.svg" alt="logo" class="popolnDropMoneyImg">
 
                 </div>
               </div>
               <div class="popolnDropContent">
                 <div class="popolnDropText">
-                  USDT TRC20
+                  <span class="fw-semibold">229</span>,49 $
                 </div>
                 <div class="popolnDropName">
-                  Валюта пополнения
+                  Стоимость
                 </div>
               </div>
 
             </div>
-            <div class="popolnDropArrow justify-end">
-              <img src="img/icons/arrow-down-gray.svg" alt="icon">
-            </div>
+         
           </div>
         </div>
-        <p class="text--sm color--gray-60 mb-6">
-          Комиссия<strong class="fw-medium"> 2%,</strong> зачисление ≈ <strong class="fw-medium">2 минуты</strong>
-        </p>
-        <h2 class="h2 mt-6 mb-2 fw-medium" style="max-width: 235px;">
-          Отправьте USDT TRC20
+      
+        <h2 class="h2 mt-6 mb-2 fw-medium lh-34" style="max-width: 235px;">
+          Отправьте<br> <div class="d-flex gap-6px align-items-center"> <img class="w-22" src="img/admin/cards/money-t.svg" alt="icon"><strong>229,00 </strong> USDT TRC20</div> 
           на кошелек:
         </h2>
 
@@ -130,7 +122,7 @@
         <div class="spin-img">
           <img src="img/icons/round-blue-spin.svg" alt="icon">
         </div>
-        Ожидание пополнения...
+        Ожидание оплаты...
       </button>
     </div>
 
@@ -138,8 +130,8 @@
 
   </div>
 </section>
-		
-		
+
+
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
@@ -296,15 +288,11 @@
   </div>
 </div>
 	</div>
-	
+
 	<script src="js/app.min.js"></script>
 
 
-	
+
 </body>
 
 </html>
-
-
-
-
