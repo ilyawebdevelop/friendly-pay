@@ -114,3 +114,10 @@ document.addEventListener('click', e => {
 if(document.querySelector('.verif-action')){
   Fancybox.show([{ src: "#modalVerification", type: "inline" }]);
 }
+if(document.querySelector('.phone-action')){
+  Fancybox.show([{ src: "#modalPhone", type: "inline" }]);
+}
+
+if(document.querySelector('.sovpad-action')){
+  Fancybox.show([{ src: "#modalSovpad", type: "inline" }]);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Модалка Данные совпдают"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header-sum-1.html',{})
+		<main class="main">
+			@@include('html/account-info.html',{})
+			@@include('html/main/cards.html',{})
+			@@include('html/main/cards-nav.html',{})
+			@@include('html/main/cards-btn.html',{})
+			@@include('html/main/cards-history.html',{})
+			@@include('html/main/limits.html',{})
+
+			<div class="sovpad-action"></div>
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

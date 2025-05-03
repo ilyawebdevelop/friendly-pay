@@ -12,20 +12,20 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Новая карта</title>
+	<title>Модалка Данные совпдают</title>
 </head>
 
 <body>
-	
+
 	<div class="wrapper">
-		<header class="header">
+		<header class="header header--sum">
   <div class="container">
     <div class="headerW">
       <a href="#" class="headerReturn">
         <svg>
           <use xlink:href="img/icons/icons.svg#return"></use>
         </svg>
-        <span>Назад</span>
+        <span>Back</span>
       </a>
       <div class="headerCenter">
         <a href="#" class="logo">Friendly Pay</a>
@@ -40,18 +40,23 @@
       </div>
 
     </div>
+    <div class="headerSum">
+      <div class="cardsPrice">
+        <strong>1 220</strong>,10 $
+      </div>
+    </div>
   </div>
 </header>
 <div class="overlay"></div>
-		<main class="main">		
+		<main class="main">
 			<div class="account-info">
   <div class="container">
     <div class="account-info-wrapper">
       <a href="#" class="account-info-logo">
         <img src="img/admin/account/ac-logo.png" alt="logo">
       </a>
-      <a href="#" class="account-info-message">
-        <img src="img/icons/ac-mes.svg" alt="icon">
+      <a href="#" class="account-info-quest">
+        <img src="img/icons/quest.svg" alt="icon">
       </a>
     </div>
  
@@ -60,12 +65,11 @@
 </div>
 			<section class="cards">
   <div class="container">
-
-    <h2 class="h2 new-card-title">
-      Новая карта
-    </h2>
-    <div class="swiper cardsSlider cardsSlider--stars-bg">
-      <!-- <img src="img/icons/stars-new.svg" alt="stars" class="cardsStars"> -->
+    <div class="cardsName">Баланс карты</div>
+    <div class="cardsPrice">
+      <strong>1 220</strong>,10 $
+    </div>
+    <div class="swiper cardsSlider">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide cardsSlide cardsSlide--blue">
@@ -80,13 +84,12 @@
                   <span></span>
                   <span></span>
                 </div>
-                <div class="cardsSlideNumberMore">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <div class="cardsSlideNumberTextLast">
+                  3888
                 </div>
-       
+                <button class="cardsSlideNumberBtn">
+                  <img src="img/icons/eye.svg" alt="icon">
+                </button>
               </div>
             </div>
             <div class="cardsSlideBottomRight">
@@ -112,74 +115,106 @@
                 <div class="cardsSlideNumberTextLast">
                   4556
                 </div>
-       
+                <button class="cardsSlideNumberBtn">
+                  <img src="img/icons/eye.svg" alt="icon">
+                </button>
               </div>
             </div>
             <div class="cardsSlideBottomRight">
               <div class="cardsSlideBrand">
-                <img src="img/admin/cards/maestro.svg" alt="logo">
+                <img src="img/admin/cards/visa.svg" alt="logo">
               </div>
             </div>
           </div>
         </div>
-
       </div>
       <div class="swiper-pagination"></div>
-     
     </div>
   </div>
 </section>
-			<section class="advs">
+			<section class="cardsNavSect sect">
   <div class="container">
-    <h2 class="h2 advsTitle">
-      Преимущества
-    </h2>
-    <div class="advsList">
-
-      <div class="advsItem">
-        <div class="advsItemIcon">
-          <img src="img/icons/advs-icon-1.svg" alt="icon" class="advsItemIcon">
-        </div>
-        <div class="advsItemContent">
-          <div class="advsItemName">Бесплатное обслуживание</div>
-          <div class="advsItemText">
-            Для всех карт
+    <nav class="cardsNav">
+      <ul class="cardsNavList">
+        <li class="cardsNavItem">
+          <a href="#">
+            <img src="img/icons/plus-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Пополнить</span>
+          </a>
+        </li>
+        <li class="cardsNavItem">
+          <a href="#" data-fancybox data-src="#modalReq">
+            <img src="img/icons/req-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Реквизиты</span>
+          </a>
+        </li>
+        <li class="cardsNavItem">
+          <button id="cardsNavMore" type="button">
+            <img src="img/icons/more-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Еще</span>
+          </button>
+          <div class="button cardIce fw-semibold">
+            <img src="img/icons/card-ice.svg" alt="icon">
+            Заморозить
           </div>
-        </div>
-      </div>
-
-      <div class="advsItem">
-        <div class="advsItemIcon">
-          <img src="img/icons/advs-icon-2.svg" alt="icon" class="advsItemIcon">
-        </div>
-        <div class="advsItemContent">
-          <div class="advsItemName">Снятие в банкоматах</div>
-          <div class="advsItemText">
-            Для физических карт
-          </div>
-        </div>
-      </div>
-      <div class="advsItem">
-        <div class="advsItemIcon">
-          <img src="img/icons/advs-icon-3.svg" alt="icon" class="advsItemIcon">
-        </div>
-        <div class="advsItemContent">
-          <div class="advsItemName">Пополнение криптой</div>
-          <div class="advsItemText">
-            USDT TRC20
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <button class="button button--blue fw-semibold w-100 advsBtn">
-      Оформить новую карту
-    </button>
-
+        </li>
+      </ul>
+    </nav>
   </div>
 </section>
-		
+			<section class="cards-btn">
+  <div class="container">
+    <a href="#" class="cards-btn-link">
+      <div class="cards-btn-link-img">
+        <img src="img/icons/cards-btn-apple.svg" alt="icon">
+      </div>
+      <div class="cards-btn-link-content">
+        <div class="cards-btn-link-title">Apple Pay</div>
+        <div class="cards-btn-link-descr">
+          Добавить карту в кошелек
+        </div>
+      </div>
+    </a>
+    <a href="#" class="cards-btn-link">
+      <div class="cards-btn-link-img">
+        <img src="img/icons/cards-btn-card.svg" alt="icon">
+      </div>
+      <div class="cards-btn-link-content">
+        <div class="cards-btn-link-title">Оформить новую карту</div>
+        <div class="cards-btn-link-descr">
+          Пластик или виртуальная
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+			<section class="card-history sect pt-0">
+  <div class="container">
+    <h2 class="h2 card-history-title">
+      Последние операции
+    </h2>
+    <img src="img/icons/history-card.png" alt="image" class="card-history-image">
+    <div class="card-history-future">
+      Здесь будут ваши операции
+      по&nbsp;карте <span>&bull;&bull; 3888</span>
+    </div>
+  </div>
+</section>
+			<section class="card-limits">
+  <div class="container">
+    <div class="card-limits-wrapper">
+      <h2 class="h2">
+        Лимиты
+      </h2>
+      <div class="card-limits-descr">
+        Единоразовый платеж по карте Visa Premium <span>•• 3888</span>  составляет <span>5 000$</span> 
+      </div>
+    </div>
+  </div>
+</section>
+
+			<div class="sovpad-action"></div>
+
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
@@ -409,15 +444,9 @@
   </div>
 </div>
 	</div>
-	
+
 	<script src="js/app.min.js"></script>
 
-
-	
 </body>
 
 </html>
-
-
-
-
