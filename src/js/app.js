@@ -111,3 +111,6 @@ document.addEventListener('click', e => {
 });
 
 
+if(document.querySelector('.verif-action')){
+  Fancybox.show([{ src: "#modalVerification", type: "inline" }]);
+}

@@ -12,11 +12,11 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Пополнение загрузка</title>
+	<title>Модалка пройти верификацию</title>
 </head>
 
 <body>
-	
+
 	<div class="wrapper">
 		<header class="header header--sum">
   <div class="container">
@@ -48,15 +48,15 @@
   </div>
 </header>
 <div class="overlay"></div>
-		<main class="main">		
+		<main class="main">
 			<div class="account-info">
   <div class="container">
     <div class="account-info-wrapper">
       <a href="#" class="account-info-logo">
         <img src="img/admin/account/ac-logo.png" alt="logo">
       </a>
-      <a href="#" class="account-info-message">
-        <img src="img/icons/ac-mes.svg" alt="icon">
+      <a href="#" class="account-info-quest">
+        <img src="img/icons/quest.svg" alt="icon">
       </a>
     </div>
  
@@ -65,16 +65,17 @@
 </div>
 			<section class="cards">
   <div class="container">
-    <div class="cardsName color--gray-60">Баланс карты</div>
+    <div class="cardsName">Баланс карты</div>
     <div class="cardsPrice">
-      <strong>0</strong> $
+      <strong>1 220</strong>,10 $
     </div>
     <div class="swiper cardsSlider">
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide cardsSlide cardsSlide--blue cardsSlide--opacity">
+        <div class="swiper-slide cardsSlide cardsSlide--blue">
           <div class="cardsSlideTop">
-            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">          
+            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
+            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
           </div>
           <div class="cardsSlideBottom">
             <div class="cardsSlideBottomLeft">
@@ -83,12 +84,12 @@
                   <span></span>
                   <span></span>
                 </div>
-                <div class="cardsSlideNumberMore">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>    
+                <div class="cardsSlideNumberTextLast">
+                  3888
+                </div>
+                <button class="cardsSlideNumberBtn">
+                  <img src="img/icons/eye.svg" alt="icon">
+                </button>
               </div>
             </div>
             <div class="cardsSlideBottomRight">
@@ -98,7 +99,34 @@
             </div>
           </div>
         </div>
-    
+
+        <div class="swiper-slide cardsSlide cardsSlide--blue">
+          <div class="cardsSlideTop">
+            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
+            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
+          </div>
+          <div class="cardsSlideBottom">
+            <div class="cardsSlideBottomLeft">
+              <div class="cardsSlideNumber">
+                <div class="cardsSlideNumberMore">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="cardsSlideNumberTextLast">
+                  4556
+                </div>
+                <button class="cardsSlideNumberBtn">
+                  <img src="img/icons/eye.svg" alt="icon">
+                </button>
+              </div>
+            </div>
+            <div class="cardsSlideBottomRight">
+              <div class="cardsSlideBrand">
+                <img src="img/admin/cards/visa.svg" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -107,20 +135,34 @@
 			<section class="cardsNavSect sect">
   <div class="container">
     <nav class="cardsNav">
-      <ul class="cardsNavList cardsNavList--active-card">
+      <ul class="cardsNavList">
         <li class="cardsNavItem">
           <a href="#">
-            <div class="spin-img">
-              <img src="img/icons/round-blue-spin.svg" alt="icon">
-            </div>
-            <span>Загрузка...</span>
+            <img src="img/icons/plus-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Пополнить</span>
           </a>
-        </li>     
+        </li>
+        <li class="cardsNavItem">
+          <a href="#" data-fancybox data-src="#modalReq">
+            <img src="img/icons/req-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Реквизиты</span>
+          </a>
+        </li>
+        <li class="cardsNavItem">
+          <button id="cardsNavMore" type="button">
+            <img src="img/icons/more-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Еще</span>
+          </button>
+          <div class="button cardIce fw-semibold">
+            <img src="img/icons/card-ice.svg" alt="icon">
+            Заморозить
+          </div>
+        </li>
       </ul>
     </nav>
   </div>
 </section>
-			<section class="cards-btn cards-btn--disabled">
+			<section class="cards-btn">
   <div class="container">
     <a href="#" class="cards-btn-link">
       <div class="cards-btn-link-img">
@@ -146,7 +188,7 @@
     </a>
   </div>
 </section>
-			<section class="card-history card-history--disabled sect pt-0">
+			<section class="card-history sect pt-0">
   <div class="container">
     <h2 class="h2 card-history-title">
       Последние операции
@@ -158,7 +200,7 @@
     </div>
   </div>
 </section>
-			<section class="card-limits card-limits--disabled">
+			<section class="card-limits">
   <div class="container">
     <div class="card-limits-wrapper">
       <h2 class="h2">
@@ -170,6 +212,9 @@
     </div>
   </div>
 </section>
+
+			<div class="verif-action"></div>
+
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
@@ -237,7 +282,6 @@
   </div>
 </div>
 
-<!-- modal -->
 <!-- history-detail -->
 <div class="modal modalHistoryDetail active" id="historyDetail">
 
@@ -325,16 +369,37 @@
 
   </div>
 </div>
+
+
+<!-- modalVerification -->
+<div class="modal modalVerification modal--bottom pt-32" id="modalVerification">
+
+  <div class="modalContent">
+
+
+    <div class="modalBody">
+
+      <div class="verifIconW mx-auto">
+        <img src="img/icons/verification.svg" alt="icon" class="modalHeadIcon">
+      </div>
+      <div class="fz-28 fw-semibold text-center mx-auto mt-3 color--black mb-1" style="max-width: 300px;">
+        Пройдите верификацию
+      </div>
+      <p class="text-center mt-1 color--gray-60">
+        Это не займет много времени.
+      </p>
+      <button class="button button--blue fw-semibold w-100 mt-3">
+        Вперед!
+      </button>
+
+    </div>
+
+  </div>
+</div>
 	</div>
-	
+
 	<script src="js/app.min.js"></script>
 
-
-	
 </body>
 
 </html>
-
-
-
-

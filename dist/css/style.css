@@ -2299,6 +2299,10 @@ section.pt {
   margin-bottom: 60px;
 }
 
+.mt-3 {
+  margin-top: 30px;
+}
+
 .mt-6 {
   margin-top: 60px;
 }
@@ -2323,6 +2327,11 @@ section.pt {
 
 .fz-18 {
   font-size: 18px;
+}
+
+.fz-28 {
+  font-size: 28px;
+  line-height: 34px;
 }
 
 .formInput {
@@ -2796,6 +2805,9 @@ h3,
   width: 100%;
   max-width: 800px;
 }
+.modal.pt-32 {
+  padding-top: 32px;
+}
 .modal-header {
   padding: 45px;
   padding-bottom: 25px;
@@ -2925,7 +2937,16 @@ h3,
   color: rgba(0, 0, 0, 0.5);
 }
 
-#modalReq, .modalMoney {
+.modal--bottom {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  bottom: 0;
+  position: absolute;
+  max-height: 100%;
+}
+
+#modalReq,
+.modalMoney {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   bottom: 0;
@@ -2933,7 +2954,8 @@ h3,
   max-height: 100%;
   padding-top: 20px;
 }
-#modalReq .h2, .modalMoney .h2 {
+#modalReq .h2,
+.modalMoney .h2 {
   font-size: 28px;
   line-height: 34px;
   max-width: calc(100% - 50px);
@@ -2946,6 +2968,16 @@ h3,
 .modalMoney .h2 {
   font-size: 20px;
   line-height: normal;
+}
+
+.verifIconW {
+  width: 92px;
+  height: 92px;
+  background-color: #175AEA;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tabs__nav {

@@ -5,6 +5,10 @@
   width: 100%;
   max-width: 800px;
 
+  &.pt-32 {
+    padding-top: 32px;
+  }
+
   &-header {
     padding: 45px;
     padding-bottom: 25px;
@@ -37,9 +41,11 @@
 .fancybox__slide {
   padding: 0;
 }
+
 .fancybox__backdrop {
   background: rgba(0, 0, 0, 0.40);
 }
+
 .modalHistoryDetail {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -53,8 +59,10 @@
     margin-bottom: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   }
+
   .modalBody {
     padding-top: 38px;
+
     .h2 {
       margin-bottom: 24px;
     }
@@ -64,6 +72,7 @@
     .modalHistoryIcon {
       background-color: #4EC269;
     }
+
     .modalHistoryPrice {
       color: #21AF40;
       text-align: center;
@@ -84,6 +93,7 @@
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+
   &>img {
     width: 20px;
   }
@@ -92,24 +102,28 @@
     position: absolute;
     right: -6px;
     bottom: -2px;
+
     img {
       width: 29px;
     }
   }
 }
+
 .modalHistoryPrice {
   font-size: 32px;
   font-weight: 600;
   line-height: normal;
 }
+
 .modalHistoryDate {
   color: rgba(0, 0, 0, 0.60);
-  text-align: center; 
+  text-align: center;
   font-size: 12px;
   font-weight: 590;
   line-height: normal;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
+
 .modalHistoryCard {
   display: flex;
   justify-content: space-between;
@@ -117,44 +131,69 @@
   column-gap: 30px;
   margin-bottom: 24px;
 }
+
 .modalHistoryStatusText {
   font-size: 17px;
   font-weight: 600;
   line-height: 24px;
 }
+
 .modalHistoryCardText {
   font-size: 17px;
+
   strong {
     font-weight: 600;
   }
 }
+
 .modalHistoryCardName {
   color: rgba(0, 0, 0, 0.60);
 }
+
 .modalHistoryStatusName {
   color: rgba(0, 0, 0, 0.50);
 }
 
+.modal--bottom {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  bottom: 0;
+  position: absolute;
+  max-height: 100%;
+}
 
-#modalReq, .modalMoney {
+#modalReq,
+.modalMoney {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   bottom: 0;
   position: absolute;
   max-height: 100%;
   padding-top: 20px;
+
   .h2 {
     font-size: 28px;
     line-height: 34px;
     max-width: calc(100% - 50px);
   }
 }
+
 .modalMoney {
   padding-top: 27px;
   padding-bottom: 60px;
+
   .h2 {
     font-size: 20px;
     line-height: normal;
   }
 }
 
+.verifIconW {
+  width: 92px;
+  height: 92px;
+  background-color: #175AEA;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
