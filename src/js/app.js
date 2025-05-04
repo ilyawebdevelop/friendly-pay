@@ -130,3 +130,6 @@ if(document.querySelector('.personal-address-action')){
   Fancybox.show([{ src: "#modalPersonalAddress", type: "inline" }]);
 }
 
+if(document.querySelector('.country-action')){
+  Fancybox.show([{ src: "#modalCountry", type: "inline" }]);
+}

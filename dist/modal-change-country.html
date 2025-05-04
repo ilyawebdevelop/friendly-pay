@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Модалка Данные совпдают</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header header--sum">
+  <div class="container">
+    <div class="headerW">
+      <a href="#" class="headerReturn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#return"></use>
+        </svg>
+        <span>Back</span>
+      </a>
+      <div class="headerCenter">
+        <a href="#" class="logo">Friendly Pay</a>
+        <div class="bot">bot</div>
+      </div>
+      <div class="headerRight">
+        <button class="headerMoreBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#header-more-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <div class="headerSum">
+      <div class="cardsPrice">
+        <strong>1 220</strong>,10 $
+      </div>
+    </div>
+  </div>
+</header>
+<div class="overlay"></div>
+		<main class="main">
+			<div class="account-info">
+  <div class="container">
+    <div class="account-info-wrapper">
+      <a href="#" class="account-info-logo">
+        <img src="img/admin/account/ac-logo.png" alt="logo">
+      </a>
+      <a href="#" class="account-info-quest">
+        <img src="img/icons/quest.svg" alt="icon">
+      </a>
+    </div>
+ 
+  </div>
+
+</div>
+			<section class="cards">
+  <div class="container">
+    <div class="cardsName">Баланс карты</div>
+    <div class="cardsPrice">
+      <strong>1 220</strong>,10 $
+    </div>
+    <div class="swiper cardsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide cardsSlide cardsSlide--blue">
+          <div class="cardsSlideTop">
+            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
+            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
+          </div>
+          <div class="cardsSlideBottom">
+            <div class="cardsSlideBottomLeft">
+              <div class="cardsSlideNumber">
+                <div class="cardsSlideNumberMore">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="cardsSlideNumberTextLast">
+                  3888
+                </div>
+                <button class="cardsSlideNumberBtn">
+                  <img src="img/icons/eye.svg" alt="icon">
+                </button>
+              </div>
+            </div>
+            <div class="cardsSlideBottomRight">
+              <div class="cardsSlideBrand">
+                <img src="img/admin/cards/visa.svg" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide cardsSlide cardsSlide--blue">
+          <div class="cardsSlideTop">
+            <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
+            <img src="img/admin/cards/oblako.svg" alt="icon" class="cardsSlideTopIcon">
+          </div>
+          <div class="cardsSlideBottom">
+            <div class="cardsSlideBottomLeft">
+              <div class="cardsSlideNumber">
+                <div class="cardsSlideNumberMore">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="cardsSlideNumberTextLast">
+                  4556
+                </div>
+                <button class="cardsSlideNumberBtn">
+                  <img src="img/icons/eye.svg" alt="icon">
+                </button>
+              </div>
+            </div>
+            <div class="cardsSlideBottomRight">
+              <div class="cardsSlideBrand">
+                <img src="img/admin/cards/visa.svg" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+			<section class="cardsNavSect sect">
+  <div class="container">
+    <nav class="cardsNav">
+      <ul class="cardsNavList">
+        <li class="cardsNavItem">
+          <a href="#">
+            <img src="img/icons/plus-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Пополнить</span>
+          </a>
+        </li>
+        <li class="cardsNavItem">
+          <a href="#" data-fancybox data-src="#modalReq">
+            <img src="img/icons/req-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Реквизиты</span>
+          </a>
+        </li>
+        <li class="cardsNavItem">
+          <button id="cardsNavMore" type="button">
+            <img src="img/icons/more-blue.svg" alt="icon" class="cardsNavItemIcon">
+            <span>Еще</span>
+          </button>
+          <div class="button cardIce fw-semibold" data-fancybox data-src="#modalZamoroz">
+            <img src="img/icons/card-ice.svg" alt="icon">
+            Заморозить
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+			<section class="cards-btn">
+  <div class="container">
+    <a href="#" class="cards-btn-link">
+      <div class="cards-btn-link-img">
+        <img src="img/icons/cards-btn-apple.svg" alt="icon">
+      </div>
+      <div class="cards-btn-link-content">
+        <div class="cards-btn-link-title">Apple Pay</div>
+        <div class="cards-btn-link-descr">
+          Добавить карту в кошелек
+        </div>
+      </div>
+    </a>
+    <a href="#" class="cards-btn-link">
+      <div class="cards-btn-link-img">
+        <img src="img/icons/cards-btn-card.svg" alt="icon">
+      </div>
+      <div class="cards-btn-link-content">
+        <div class="cards-btn-link-title">Оформить новую карту</div>
+        <div class="cards-btn-link-descr">
+          Пластик или виртуальная
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+			<section class="card-history sect pt-0">
+  <div class="container">
+    <h2 class="h2 card-history-title">
+      Последние операции
+    </h2>
+    <img src="img/icons/history-card.png" alt="image" class="card-history-image">
+    <div class="card-history-future">
+      Здесь будут ваши операции
+      по&nbsp;карте <span>&bull;&bull; 3888</span>
+    </div>
+  </div>
+</section>
+			<section class="card-limits">
+  <div class="container">
+    <div class="card-limits-wrapper">
+      <h2 class="h2">
+        Лимиты
+      </h2>
+      <div class="card-limits-descr">
+        Единоразовый платеж по карте Visa Premium <span>•• 3888</span>  составляет <span>5 000$</span> 
+      </div>
+    </div>
+  </div>
+</section>
+
+			<div class="country-action"></div>
+
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+
+</footer>
+
+
+
+
+<script src="js/clipboard.min.js"></script>
+		<!-- modal -->
+<!-- modalReq -->
+<div class="modal" id="modalReq">
+
+  <div class="modalContent">
+    <div class="sectHead">
+      <div class="h2 text--white">Реквизиты</div>
+    </div>
+
+    <div class="modalBody">
+      <div class="inputGrid">
+        <div class="inputRow">
+          <div class="inputW">
+            <input id="req_1" class="formInput" type="text" value="1234 5678 9012 3456">
+            <!-- Trigger -->
+            <button class="copyBtn" aria-label="asdasd" data-clipboard-target="#req_1">
+              <img src="img/icons/copy.svg" alt="Copy to clipboard">
+            </button>
+            <div class="copyText">
+              Скопировано
+            </div>
+          </div>
+        </div>
+
+        <div class="inputRow inputRow--50">
+          <div class="inputW">
+            <input id="req_2" class="formInput" type="text" value="12 / 34" readonly>
+            <button class="copyBtn" type="button" data-clipboard-target="#req_2">
+              <img src="img/icons/copy.svg" alt="Copy to clipboard">
+            </button>
+            <div class="copyText">
+              Скопировано
+            </div>
+          </div>
+        </div>
+        <div class="inputRow inputRow--50">
+          <div class="inputW">
+            <input id="req_3" class="formInput" type="text" value="123" readonly>
+            <button class="copyBtn" type="button" data-clipboard-target="#req_3">
+              <img src="img/icons/copy.svg" alt="copy">
+            </button>
+            <div class="copyText">
+              Скопировано
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button type="button" class="button button--gray w-100 fw-semibold" title="Close" data-fancybox-close readonly>
+        Закрыть
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- history-detail -->
+<div class="modal modalHistoryDetail active" id="historyDetail">
+
+  <div class="modalContent">
+    <div class="sectHead">
+      <div class="modalHistoryIcon">
+        <img src="img/icons/arrow-down.svg" alt="arrow">
+        <div class="process">
+          <img src="img/icons/process.svg" alt="process">
+        </div>
+      </div>
+      <div class="modalHistoryPrice">
+        +500 $
+      </div>
+      <div class="modalHistoryDate">
+        12 октября, 12:32
+      </div>
+
+    </div>
+    <div class="modalBody">
+      <h2 class="h2">
+        Детали
+      </h2>
+      <div class="modalHistoryCard">
+        <div class="modalHistoryCardLeft">
+          <div class="modalHistoryCardName">Карта</div>
+          <div class="modalHistoryCardText">
+            <strong>Visa Virtual</strong> •• 3888
+          </div>
+        </div>
+        <img src="img/admin/modal-history/card.svg" alt="image" class="modalHistoryCardImg">
+      </div>
+      <div class="modalHistoryStatus">
+        <div class="modalHistoryStatusName">
+          Статус
+        </div>
+        <div class="modalHistoryStatusText">
+          В обработке
+        </div>
+      </div>
+
+      <button class="button w-100 button--gray fw-semibold modalHistoryDetailBtn" title="Close" data-fancybox-close>
+        Закрыть
+      </button>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- modalMoney -->
+<div class="modal modalMoney" id="modalMoney">
+
+  <div class="modalContent">
+    <div class="sectHead">
+      <div class="h2 text--white">Чем пополнить</div>
+    </div>
+
+    <div class="modalBody">
+
+      <a href="#" class="dropItem popolnDropItem">
+        <div class="popolnDropLeft">
+          <div class="popolnDropImg">
+            <div class="popolnDropMoney">
+              <img src="img/admin/cards/money-t.svg" alt="logo" class="popolnDropMoneyImg">
+
+            </div>
+          </div>
+          <div class="popolnDropContent">
+            <div class="popolnDropText fw-medium color--black">
+              USDT TRC20
+            </div>
+            <div class="popolnDropName color--gray-60">
+              От <span class="fw-semibold">10 $</span>, комиссия <span class="fw-semibold">2%</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="popolnDropArrow justify-center">
+          <img src="img/icons/arrow-right-gray.svg" alt="icon">
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalVerification -->
+<div class="modal modalVerification modal--bottom pt-25" id="modalVerification">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+
+      <div class="verifIconW mx-auto">
+        <img src="img/icons/verification.svg" alt="icon" class="modalHeadIcon">
+      </div>
+      <div class="fz-28 fw-semibold text-center mx-auto mt-3 color--black mb-1" style="max-width: 300px;">
+        Пройдите верификацию
+      </div>
+      <p class="text-center mt-1 color--gray-60">
+        Это не займет много времени.
+      </p>
+      <button class="button button--blue fw-semibold w-100 mt-3">
+        Вперед!
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalPhone -->
+<div class="modal modalPhone modal--bottom pt-25" id="modalPhone">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+
+      <img src="img/icons/phone-red.svg" alt="icon" class="modalHeadIcon mx-auto" style="max-width: 110px;">
+
+      <div class="fz-28 fw-semibold text-center mx-auto mt-3 color--black mb-1" style="max-width: 300px;">
+        Номер телефона
+      </div>
+      <p class="text-center mt-1 color--gray-60 mx-auto" style="max-width: 300px;">
+        Поделитесь свои номером телефона,
+        чтобы продолжить.
+      </p>
+      <button class="button button--blue fw-semibold w-100 mt-3">
+        Поделиться
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalSovpad -->
+<div class="modal modalSovpad modal--bottom pt-25" id="modalSovpad">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+
+      <img src="img/icons/sovpad-icon.svg" alt="icon" class="modalHeadIcon mx-auto" style="max-width: 110px;">
+
+      <div class="fz-28 fw-semibold text-center mx-auto mt-3 color--black mb-1" style="max-width: 300px;">
+        Данные совпадают?
+      </div>
+      <p class="text-center mt-1 color--gray-60 mx-auto" style="max-width: 320px;">
+        Неправильное имя и дата рождения могут привести к ограничению работы аккаунта.
+      </p>
+      <button class="button button--blue fw-semibold w-100 mt-3">
+        Подтвердить
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalPersonalInfo -->
+<div class="modal modalPersonalInfo modal--bottom pt-25" id="modalPersonalInfo">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+      <div class="modalHead">
+        <div class="fz-28 fw-semibold color--black mb-1" style="max-width: 300px;">
+          Личные данные
+        </div>
+      </div>
+
+      <p class="mt-1 color--gray-60 mb-3" style="max-width: 320px;">
+        Ваши данные находятся под защитой.
+      </p>
+
+      <form action="#">
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Ваше имя"
+            value="Иванов Иван">
+        </div>
+        <div class="fz-12 fw-medium color--gray-40 mb-2" style="max-width: 250px;">
+          Имя и фамилия должны соответствовать данным в удостоверении личности.
+        </div>
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Дата рождения">
+        </div>
+
+        <button class="button button--blue fw-semibold w-100 mt-3 mb-15">
+          Продолжить
+        </button>
+      </form>
+
+      <div class="fz-12 mx-auto text-center fw-medium color--gray-60" style="max-width: 250px;">
+        Продолжая, вы соглашаетесь на передачу данных сервису FriendlyPay.
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalPersonalAddress -->
+<div class="modal modalPersonalAddress modal--bottom pt-25" id="modalPersonalAddress">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+      <div class="modalHead">
+        <div class="fz-28 fw-semibold color--black mb-1" style="max-width: 300px;">
+          Адрес проживания
+        </div>
+      </div>
+
+      <p class="mt-1 color--gray-60 mb-3" style="max-width: 320px;">
+        Ваши данные находятся под защитой.
+      </p>
+
+      <form action="#">
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Страна"
+            value="Россия">
+        </div>
+        <div class="fz-12 fw-medium color--gray-40 mb-2" style="max-width: 250px;">
+          Имя и фамилия должны соответствовать данным в удостоверении личности.
+        </div>
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Адрес проживания">
+        </div>
+        <button class="button button--blue fw-semibold w-100 mt-3 mb-15">
+          Продолжить
+        </button>
+      </form>
+
+      <div class="fz-12 mx-auto text-center fw-medium color--gray-60" style="max-width: 250px;">
+        Продолжая, вы соглашаетесь на передачу данных сервису FriendlyPay.
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalCountry -->
+<div class="modal modalCountry modal--bottom pt-25" id="modalCountry">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+      <div class="modalHead">
+        <div class="fz-28 fw-semibold color--black mb-3" style="max-width: 300px;">
+          Выбор страны
+        </div>
+      </div>
+
+      <form action="#">
+        <div class="inputW mb-2">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black"
+            placeholder="Поиск по стране...">
+        </div>
+        <div class="radioList">
+
+          <div class="radioItem mb-2">
+            <input id="country_1" name="country-group" type="radio" checked hidden>
+            <label for="country_1">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-1.png" alt="icon">
+                <span class="radioItemName">Россия</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_2" name="country-group" type="radio" hidden>
+            <label for="country_2">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-2.png" alt="icon">
+                <span class="radioItemName">США</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_3" name="country-group" type="radio" hidden>
+            <label for="country_3">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-3.png" alt="icon">
+                <span class="radioItemName">Израиль</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_4" name="country-group" type="radio" hidden>
+            <label for="country_4">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-4.png" alt="icon">
+                <span class="radioItemName">Пакистан</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_5" name="country-group" type="radio" hidden>
+            <label for="country_5">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-5.png" alt="icon">
+                <span class="radioItemName">ЮАР</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_6" name="country-group" type="radio" hidden>
+            <label for="country_6">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-1.png" alt="icon">
+                <span class="radioItemName">Россия</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_7" name="country-group" type="radio" hidden>
+            <label for="country_7">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-2.png" alt="icon">
+                <span class="radioItemName">США</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_8" name="country-group" type="radio" hidden>
+            <label for="country_8">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-3.png" alt="icon">
+                <span class="radioItemName">Израиль</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+        </div>
+
+        <button class="button button--blue fw-semibold w-100 mt-3 mb-15">
+          Готово
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalCountry -->
+<div class="modal modalZamoroz modal--bottom pt-25" id="modalZamoroz">
+
+  <div class="modalContent">
+    <div class="modalHead">
+      <div class="fz-28 fw-semibold color--black mb-3" style="max-width: 300px;">
+        Действия
+      </div>
+    </div>
+    <div class="modalBody">
+      <button class="d-flex gap-2 align-items-center mb-3" type="button">
+        <img src="img/icons/zamoroz-icon.svg" alt="icon">
+        <span class="fw-semibold">Заморозить</span>
+      </button>
+
+      <button class="button button--light-blue w-100 fw-semibold color--blue" title="Close" data-fancybox-close
+        readonly>
+        Закрыть
+      </button>
+
+    </div>
+
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

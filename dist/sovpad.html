@@ -192,7 +192,7 @@
   </div>
 </div>
 
-<!-- modalReq -->
+<!-- modalMoney -->
 <div class="modal modalMoney" id="modalMoney">
 
   <div class="modalContent">
@@ -322,7 +322,8 @@
 
       <form action="#">
         <div class="inputW mb-1">
-          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Ваше имя" value="Иванов Иван">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Ваше имя"
+            value="Иванов Иван">
         </div>
         <div class="fz-12 fw-medium color--gray-40 mb-2" style="max-width: 250px;">
           Имя и фамилия должны соответствовать данным в удостоверении личности.
@@ -345,7 +346,6 @@
   </div>
 </div>
 
-
 <!-- modalPersonalAddress -->
 <div class="modal modalPersonalAddress modal--bottom pt-25" id="modalPersonalAddress">
 
@@ -364,7 +364,8 @@
 
       <form action="#">
         <div class="inputW mb-1">
-          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Страна" value="Россия">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Страна"
+            value="Россия">
         </div>
         <div class="fz-12 fw-medium color--gray-40 mb-2" style="max-width: 250px;">
           Имя и фамилия должны соответствовать данным в удостоверении личности.
@@ -380,6 +381,150 @@
       <div class="fz-12 mx-auto text-center fw-medium color--gray-60" style="max-width: 250px;">
         Продолжая, вы соглашаетесь на передачу данных сервису FriendlyPay.
       </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalCountry -->
+<div class="modal modalCountry modal--bottom pt-25" id="modalCountry">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+      <div class="modalHead">
+        <div class="fz-28 fw-semibold color--black mb-3" style="max-width: 300px;">
+          Выбор страны
+        </div>
+      </div>
+
+      <form action="#">
+        <div class="inputW mb-2">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black"
+            placeholder="Поиск по стране...">
+        </div>
+        <div class="radioList">
+
+          <div class="radioItem mb-2">
+            <input id="country_1" name="country-group" type="radio" checked hidden>
+            <label for="country_1">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-1.png" alt="icon">
+                <span class="radioItemName">Россия</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_2" name="country-group" type="radio" hidden>
+            <label for="country_2">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-2.png" alt="icon">
+                <span class="radioItemName">США</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_3" name="country-group" type="radio" hidden>
+            <label for="country_3">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-3.png" alt="icon">
+                <span class="radioItemName">Израиль</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_4" name="country-group" type="radio" hidden>
+            <label for="country_4">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-4.png" alt="icon">
+                <span class="radioItemName">Пакистан</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_5" name="country-group" type="radio" hidden>
+            <label for="country_5">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-5.png" alt="icon">
+                <span class="radioItemName">ЮАР</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_6" name="country-group" type="radio" hidden>
+            <label for="country_6">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-1.png" alt="icon">
+                <span class="radioItemName">Россия</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_7" name="country-group" type="radio" hidden>
+            <label for="country_7">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-2.png" alt="icon">
+                <span class="radioItemName">США</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+          <div class="radioItem mb-2">
+            <input id="country_8" name="country-group" type="radio" hidden>
+            <label for="country_8">
+              <div class="radioItemL">
+                <img src="img/admin/country/icon-3.png" alt="icon">
+                <span class="radioItemName">Израиль</span>
+              </div>
+              <div class="rect"></div>
+            </label>
+          </div>
+
+        </div>
+
+        <button class="button button--blue fw-semibold w-100 mt-3 mb-15">
+          Готово
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalCountry -->
+<div class="modal modalZamoroz modal--bottom pt-25" id="modalZamoroz">
+
+  <div class="modalContent">
+    <div class="modalHead">
+      <div class="fz-28 fw-semibold color--black mb-3" style="max-width: 300px;">
+        Действия
+      </div>
+    </div>
+    <div class="modalBody">
+      <button class="d-flex gap-2 align-items-center mb-3" type="button">
+        <img src="img/icons/zamoroz-icon.svg" alt="icon">
+        <span class="fw-semibold">Заморозить</span>
+      </button>
+
+      <button class="button button--light-blue w-100 fw-semibold color--blue" title="Close" data-fancybox-close
+        readonly>
+        Закрыть
+      </button>
 
     </div>
 
