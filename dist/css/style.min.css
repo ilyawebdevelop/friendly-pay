@@ -2271,6 +2271,10 @@ section.pt {
   color: #175AEA;
 }
 
+.color--gray-40 {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .color--gray-60 {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -2295,8 +2299,24 @@ section.pt {
   margin-bottom: 30px;
 }
 
+.mb-5 {
+  margin-bottom: 50px;
+}
+
 .mb-6 {
   margin-bottom: 60px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
 }
 
 .mt-3 {
@@ -2318,6 +2338,11 @@ section.pt {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.fz-12 {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .fz-14 {
@@ -2342,18 +2367,19 @@ section.pt {
   width: 100%;
   padding-left: 18px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
   padding-right: 45px;
-}
-@media (max-width: 1199px) {
-  .formInput {
-    padding-left: 20px;
-  }
 }
 .formInput::placeholder {
   color: #b0b0b0;
   font-size: 16px;
+}
+.formInput--color-black {
+  color: #000;
+}
+.formInput--bg-gray {
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .fw-medium {
@@ -2467,6 +2493,11 @@ h1,
 .h1 {
     font-size: 24px;
   }
+}
+h1.fz-28,
+.h1.fz-28 {
+  font-size: 28px;
+  line-height: normal;
 }
 
 h2,
@@ -2805,8 +2836,8 @@ h3,
   width: 100%;
   max-width: 800px;
 }
-.modal.pt-32 {
-  padding-top: 32px;
+.modal.pt-25 {
+  padding-top: 25px;
 }
 .modal-header {
   padding: 45px;

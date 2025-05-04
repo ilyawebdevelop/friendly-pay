@@ -85,6 +85,9 @@ section {
 .color--blue {
   color: #175AEA;
 }
+.color--gray-40 {
+  color: rgba(0, 0, 0, 0.40);
+}
 .color--gray-60 {
   color: rgba(0, 0, 0, 0.60);
 }
@@ -103,8 +106,20 @@ section {
 .mb-3 {
   margin-bottom: 30px;
 }
+.mb-5 {
+  margin-bottom: 50px;
+}
 .mb-6 {
   margin-bottom: 60px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-35 {
+  margin-bottom: 35px;
+}
+.mb-45 {
+  margin-bottom: 45px;
 }
 .mt-3 {
   margin-top: 30px;
@@ -122,6 +137,10 @@ section {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.fz-12 {
+  font-size: 12px;
+  line-height: 16px;
 }
 .fz-14 {
   font-size: 14px;
@@ -142,17 +161,19 @@ section {
   width: 100%;
   padding-left: 18px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(0, 0, 0, 0.60);
   padding-right: 45px;
-
-  @media(max-width: 1199px) {
-    padding-left: 20px;
-  }
 
   &::placeholder {
     color: #b0b0b0;
     font-size: 16px;
+  }
+  &--color-black {
+    color: #000;
+  }
+  &--bg-gray {
+    background: rgba(0, 0, 0, 0.02);
   }
 }
 
@@ -282,6 +303,10 @@ h1,
 
   @media(max-width: 991px) {
     font-size: 24px;
+  }
+  &.fz-28 {
+    font-size: 28px;
+    line-height: normal;
   }
 }
 

@@ -12,20 +12,20 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Заказ карты</title>
+	<title>Номер телефона</title>
 </head>
 
 <body>
 
 	<div class="wrapper">
-		<header class="header">
+		<header class="header header--sum">
   <div class="container">
     <div class="headerW">
       <a href="#" class="headerReturn">
         <svg>
           <use xlink:href="img/icons/icons.svg#return"></use>
         </svg>
-        <span>Назад</span>
+        <span>Back</span>
       </a>
       <div class="headerCenter">
         <a href="#" class="logo">Friendly Pay</a>
@@ -40,143 +40,40 @@
       </div>
 
     </div>
+    <div class="headerSum">
+      <div class="cardsPrice">
+        <strong>1 220</strong>,10 $
+      </div>
+    </div>
   </div>
 </header>
 <div class="overlay"></div>
 		<main class="main">
-
-			<section class="zakaz sect pt pb-0">
+		
+			<section class="popoln sect pt pb-0">
   <div class="container">
+    <div class="pageW">
+      <div class="pageT mt-auto mb-auto">
 
-    <div class="zakaz-card-block">
-      <a href="#" class="d-flex align-items-center justify-between mb-1">
-        <div class="fz-18 fw-semibold">
-          Visa Виртуальная
+        <img src="img/icons/phone-red.svg" alt="icon" class="modalHeadIcon mx-auto mb-35" style="max-width: 110px;">
+
+        <div class="h1 text-center mb-15">
+          Номер телефона
         </div>
-        <div class="link-page">
-          <img src="img/icons/arrow-right-gray.svg" alt="">
-        </div>
-      </a>
 
-      <p class="text--sm color--gray-60 mb-2">
-        Карта подходит для большинства интернет-магазинов и поддерживает ApplePay и GooglePay
-      </p>
-
-      <div class="swiper-slide swiper-slide-active mx-auto cardsSlide cardsSlide--blue cardsSlide--shadow-none mb-3">
-  <div class="cardsSlideTop">
-    <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
-  </div>
-  <div class="cardsSlideBottom">
-    <div class="cardsSlideBottomLeft">
-
-    </div>
-    <div class="cardsSlideBottomRight">
-      <div class="cardsSlideBrand">
-        <img src="img/admin/cards/visa.svg" alt="logo">
+        <p class="color--gray-60 text-center mx-auto" style="max-width: 287px;" style="max-width: 300px;">
+          Поделитесь свои номером телефона,
+          чтобы продолжить.
+        </p>
       </div>
+      <button class="button button--blue w-100 fw-semibold color--blue">
+        Поделиться
+      </button>
     </div>
-  </div>
-</div>
-
-      <ul class="zakaz-card-list">
-        <li class="zakaz-card-item">
-          <div class="zakaz-card-item-name">
-            5 000 $
-          </div>
-          <div class="zakaz-card-item-text text--sm">
-            Дневной
-            лимит
-          </div>
-        </li>
-        <li class="zakaz-card-item">
-          <div class="zakaz-card-item-name">
-            4%
-          </div>
-          <div class="zakaz-card-item-text text--sm">
-            Комиссия
-            пополнения
-          </div>
-        </li>
-        <li class="zakaz-card-item">
-          <div class="zakaz-card-item-name">
-            229 $
-          </div>
-          <div class="zakaz-card-item-text text--sm">
-            Оплата за&nbsp;карту
-            один раз и&nbsp;навсегда
-          </div>
-        </li>
-      </ul>
-
-
-    </div>
-
-    <div class="zakaz-card-block">
-      <a href="#" class="d-flex align-items-center justify-between mb-1">
-        <div class="fz-18 fw-semibold">
-          Visa Физическая
-        </div>
-        <div class="link-page">
-          <img src="img/icons/arrow-right-gray.svg" alt="">
-        </div>
-      </a>
-
-      <p class="text--sm color--gray-60 mb-2">
-        Карта подходит для большинства интернет-магазинов и поддерживает ApplePay и GooglePay
-      </p>
-
-      <div class="swiper-slide swiper-slide-active mx-auto cardsSlide cardsSlide--blue cardsSlide--shadow-none mb-3">
-  <div class="cardsSlideTop">
-    <img src="img/admin/cards/cards-logo.svg" alt="icon" class="cardsSlideLogo">
-  </div>
-  <div class="cardsSlideBottom">
-    <div class="cardsSlideBottomLeft">
-
-    </div>
-    <div class="cardsSlideBottomRight">
-      <div class="cardsSlideBrand">
-        <img src="img/admin/cards/visa.svg" alt="logo">
-      </div>
-    </div>
-  </div>
-</div>
-
-      <ul class="zakaz-card-list">
-        <li class="zakaz-card-item">
-          <div class="zakaz-card-item-name">
-            5 000 $
-          </div>
-          <div class="zakaz-card-item-text text--sm">
-            Дневной
-            лимит
-          </div>
-        </li>
-        <li class="zakaz-card-item">
-          <div class="zakaz-card-item-name">
-            5%
-          </div>
-          <div class="zakaz-card-item-text text--sm">
-            Комиссия
-            пополнения
-          </div>
-        </li>
-        <li class="zakaz-card-item">
-          <div class="zakaz-card-item-name">
-            229 $
-          </div>
-          <div class="zakaz-card-item-text text--sm">
-            Оплата за&nbsp;карту
-            один раз и&nbsp;навсегда
-          </div>
-        </li>
-      </ul>
-
-
-    </div>
-
 
   </div>
 </section>
+
 
 
 		</main>
@@ -492,8 +389,6 @@
 	</div>
 
 	<script src="js/app.min.js"></script>
-
-
 
 </body>
 

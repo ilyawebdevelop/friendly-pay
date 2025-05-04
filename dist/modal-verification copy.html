@@ -371,7 +371,7 @@
 </div>
 
 <!-- modalVerification -->
-<div class="modal modalVerification modal--bottom pt-32" id="modalVerification">
+<div class="modal modalVerification modal--bottom pt-25" id="modalVerification">
 
   <div class="modalContent">
 
@@ -396,25 +396,130 @@
 </div>
 
 <!-- modalPhone -->
-<div class="modal modalPhone modal--bottom pt-32" id="modalPhone">
+<div class="modal modalPhone modal--bottom pt-25" id="modalPhone">
 
   <div class="modalContent">
 
     <div class="modalBody">
 
-      <div class="verifIconW mx-auto">
-        <img src="img/icons/verification.svg" alt="icon" class="modalHeadIcon">
-      </div>
+      <img src="img/icons/phone-red.svg" alt="icon" class="modalHeadIcon mx-auto" style="max-width: 110px;">
+
       <div class="fz-28 fw-semibold text-center mx-auto mt-3 color--black mb-1" style="max-width: 300px;">
         Номер телефона
       </div>
-      <p class="text-center mt-1 color--gray-60">
+      <p class="text-center mt-1 color--gray-60 mx-auto" style="max-width: 300px;">
         Поделитесь свои номером телефона,
         чтобы продолжить.
       </p>
       <button class="button button--blue fw-semibold w-100 mt-3">
-        Вперед!
+        Поделиться
       </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalSovpad -->
+<div class="modal modalSovpad modal--bottom pt-25" id="modalSovpad">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+
+      <img src="img/icons/sovpad-icon.svg" alt="icon" class="modalHeadIcon mx-auto" style="max-width: 110px;">
+
+      <div class="fz-28 fw-semibold text-center mx-auto mt-3 color--black mb-1" style="max-width: 300px;">
+        Данные совпадают?
+      </div>
+      <p class="text-center mt-1 color--gray-60 mx-auto" style="max-width: 320px;">
+        Неправильное имя и дата рождения могут привести к ограничению работы аккаунта.
+      </p>
+      <button class="button button--blue fw-semibold w-100 mt-3">
+        Подтвердить
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modalPersonalInfo -->
+<div class="modal modalPersonalInfo modal--bottom pt-25" id="modalPersonalInfo">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+      <div class="modalHead">
+        <div class="fz-28 fw-semibold color--black mb-1" style="max-width: 300px;">
+          Личные данные
+        </div>
+      </div>
+
+      <p class="mt-1 color--gray-60 mb-3" style="max-width: 320px;">
+        Ваши данные находятся под защитой.
+      </p>
+
+      <form action="#">
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Ваше имя" value="Иванов Иван">
+        </div>
+        <div class="fz-12 fw-medium color--gray-40 mb-2" style="max-width: 250px;">
+          Имя и фамилия должны соответствовать данным в удостоверении личности.
+        </div>
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Дата рождения">
+        </div>
+
+        <button class="button button--blue fw-semibold w-100 mt-3 mb-15">
+          Продолжить
+        </button>
+      </form>
+
+      <div class="fz-12 mx-auto text-center fw-medium color--gray-60" style="max-width: 250px;">
+        Продолжая, вы соглашаетесь на передачу данных сервису FriendlyPay.
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- modalPersonalAddress -->
+<div class="modal modalPersonalAddress modal--bottom pt-25" id="modalPersonalAddress">
+
+  <div class="modalContent">
+
+    <div class="modalBody">
+      <div class="modalHead">
+        <div class="fz-28 fw-semibold color--black mb-1" style="max-width: 300px;">
+          Адрес проживания
+        </div>
+      </div>
+
+      <p class="mt-1 color--gray-60 mb-3" style="max-width: 320px;">
+        Ваши данные находятся под защитой.
+      </p>
+
+      <form action="#">
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Страна" value="Россия">
+        </div>
+        <div class="fz-12 fw-medium color--gray-40 mb-2" style="max-width: 250px;">
+          Имя и фамилия должны соответствовать данным в удостоверении личности.
+        </div>
+        <div class="inputW mb-1">
+          <input type="text" class="formInput formInput--bg-gray formInput--color-black" placeholder="Адрес проживания">
+        </div>
+        <button class="button button--blue fw-semibold w-100 mt-3 mb-15">
+          Продолжить
+        </button>
+      </form>
+
+      <div class="fz-12 mx-auto text-center fw-medium color--gray-60" style="max-width: 250px;">
+        Продолжая, вы соглашаетесь на передачу данных сервису FriendlyPay.
+      </div>
 
     </div>
 

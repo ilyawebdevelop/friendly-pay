@@ -121,3 +121,12 @@ if(document.querySelector('.phone-action')){
 if(document.querySelector('.sovpad-action')){
   Fancybox.show([{ src: "#modalSovpad", type: "inline" }]);
 }
+
+if(document.querySelector('.personal-info-action')){
+  Fancybox.show([{ src: "#modalPersonalInfo", type: "inline" }]);
+}
+
+if(document.querySelector('.personal-address-action')){
+  Fancybox.show([{ src: "#modalPersonalAddress", type: "inline" }]);
+}
+
